@@ -9,5 +9,5 @@ def get_nums(filename):
     return nums
 
 if __name__ == "__main__":
-    num = sum(get_nums("Problem13_input.txt"))
+    num = sum(get_nums("Problem013_input.txt"))
     print str(num)[:10]

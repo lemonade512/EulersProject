@@ -45,7 +45,7 @@ def right_product(start, arr):
 
 if __name__ == "__main__":
     max_product = 0
-    arr = build_arr("Problem11_input.txt")
+    arr = build_arr("Problem011_input.txt")
     # Find right diag products
     for i in range(len(arr)-3):
         for j in range(len(arr[i]) - 3):

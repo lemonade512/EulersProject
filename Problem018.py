@@ -18,7 +18,7 @@ def combine_lines(arr):
     return arr
 
 if __name__ == "__main__":
-    arr = get_triangle_array("problem18.txt")
+    arr = get_triangle_array("Problem018_input.txt")
     while len(arr) > 1:
         arr = combine_lines(arr)
 

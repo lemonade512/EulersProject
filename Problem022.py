@@ -20,7 +20,7 @@ def extract_names(filename):
     return sorted(l)
 
 if __name__ == "__main__":
-    names = extract_names("Problem22_input.txt")
+    names = extract_names("Problem022_input.txt")
     tot = 0
     for i, name in enumerate(names):
         tot += score(name, i+1)
