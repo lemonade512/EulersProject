@@ -5,7 +5,6 @@ def is_pythagorean_triplet(a, b, c):
         return True
     return False
 
-#TODO this is bad code practice
 if __name__ == "__main__":
     triple = (0, 0, 0)
     for c in range(1000):

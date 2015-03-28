@@ -3,21 +3,11 @@
 import cProfile
 from math import sqrt
 
+from Algorithms.NumericalAlgorithms.Python.divisors import divisors
+
 # d(n) is the sum of proper divisors of n
 def d(n):
-    return sum(divisors(n))
-
-def divisors(n):
-    output = list()
-    for i in range(1, int(sqrt(n))):
-        if n == (n / i) * i:
-            if i * i == n or i == 1:
-                output.append(i)
-            else:
-                output.append(i)
-                output.append(n/i)
-
-    return sorted(output)
+    return sum(divisors(n)[:-1])
 
 def is_amicable(n):
     d_n = d(n)
